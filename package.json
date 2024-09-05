@@ -21,7 +21,7 @@
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm",
     "build:esm:minify": "minify lib/esm/guacamole.js > lib/esm/guacamole.min.js",
-    "build:esm": "node build-esm.cjs && npm run build:esm:minify",
+    "build:esm": "node build-esm.cjs",
     "build:cjs:minify": "minify lib/cjs/guacamole.js > lib/cjs/guacamole.min.js",
     "build:cjs": "node build-cjs.cjs && npm run build:cjs:minify",
     "prepublishOnly": "npm run build",
