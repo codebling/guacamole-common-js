@@ -25,6 +25,7 @@
     "build:cjs:minify": "minify lib/cjs/guacamole.js > lib/cjs/guacamole.min.js",
     "build:cjs": "node build-cjs.cjs && npm run build:cjs:minify",
     "prepublishOnly": "npm run build",
+    "postinstall": "npm run build",
     "test": "jest --passWithNoTests"
   },
   "files": [
